@@ -36,16 +36,16 @@ fn test_fibonacci(fn_to_test: fn(u32) -> u32) {
     * For a given fibonacci calculator, print the
     * first 10 fibonacci numbers.
     *
+    * For the i-th number, the printed line will be,
+    * f(n = i) = fibonacci(i).
+    *
+    * For example, for the 6th fibonacci number,
+    * f(n = 6) = 8.
+    *
     * Param: fn_to_test: fn(u32) -> u32
      */
-    println!("First: {}", fn_to_test(1));
-    println!("Second: {}", fn_to_test(2));
-    println!("Third: {}", fn_to_test(3));
-    println!("Fourth: {}", fn_to_test(4));
-    println!("Fifth: {}", fn_to_test(5));
-    println!("Sixth: {}", fn_to_test(6));
-    println!("Seventh: {}", fn_to_test(7));
-    println!("Eighth: {}", fn_to_test(8));
-    println!("Ninth: {}", fn_to_test(9));
-    println!("Tenth: {}", fn_to_test(10));
+
+    for n in 1..11 {
+        println!("f(n = {}) = {}", n, fn_to_test(n));
+    }
 }
