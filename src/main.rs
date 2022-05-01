@@ -36,7 +36,7 @@ fn test_fibonacci(fn_to_test: fn(u32) -> u32) {
     * For a given fibonacci calculator, print the
     * first 10 fibonacci numbers.
     *
-    * Param: fibonacci: fn(u32) -> u32
+    * Param: fn_to_test: fn(u32) -> u32
      */
     println!("First: {}", fn_to_test(1));
     println!("Second: {}", fn_to_test(2));
