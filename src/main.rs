@@ -31,21 +31,21 @@ fn fibonacci_recursive(n: u32) -> u32 {
     fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2)
 }
 
-fn test_fibonacci(fibonacci: fn(u32) -> u32) {
+fn test_fibonacci(fn_to_test: fn(u32) -> u32) {
     /*
     * For a given fibonacci calculator, print the
     * first 10 fibonacci numbers.
     *
     * Param: fibonacci: fn(u32) -> u32
      */
-    println!("First: {}", fibonacci(1));
-    println!("Second: {}", fibonacci(2));
-    println!("Third: {}", fibonacci(3));
-    println!("Fourth: {}", fibonacci(4));
-    println!("Fifth: {}", fibonacci(5));
-    println!("Sixth: {}", fibonacci(6));
-    println!("Seventh: {}", fibonacci(7));
-    println!("Eighth: {}", fibonacci(8));
-    println!("Ninth: {}", fibonacci(9));
-    println!("Tenth: {}", fibonacci(10));
+    println!("First: {}", fn_to_test(1));
+    println!("Second: {}", fn_to_test(2));
+    println!("Third: {}", fn_to_test(3));
+    println!("Fourth: {}", fn_to_test(4));
+    println!("Fifth: {}", fn_to_test(5));
+    println!("Sixth: {}", fn_to_test(6));
+    println!("Seventh: {}", fn_to_test(7));
+    println!("Eighth: {}", fn_to_test(8));
+    println!("Ninth: {}", fn_to_test(9));
+    println!("Tenth: {}", fn_to_test(10));
 }
